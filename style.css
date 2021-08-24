@@ -21,6 +21,7 @@ body {
   background: linear-gradient(to top left, #28b487, #7dd56f);
 }
 
+/* These are the button elements */
 .show-modal {
   font-size: 2rem;
   font-weight: 600;
@@ -119,6 +120,7 @@ p {
   display: none;
 }
 
+/* These are the div elements*/
 .modal {
   position: absolute;
   top: 50%;
@@ -133,7 +135,7 @@ p {
   z-index: 10;
 }
 
-.modalTest {
+.modaltest {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -147,7 +149,7 @@ p {
   z-index: 10;
 }
 
-.modalLife {
+.modallife {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -161,7 +163,7 @@ p {
   z-index: 10;
 }
 
-.modalSoul {
+.modalsoul {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -175,7 +177,7 @@ p {
   z-index: 10;
 }
 
-.modalPersonality {
+.modalpersonality {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -189,7 +191,7 @@ p {
   z-index: 10;
 }
 
-.modalPath {
+.modalpath {
   position: absolute;
   top: 50%;
   left: 50%;

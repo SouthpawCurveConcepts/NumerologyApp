@@ -1,5 +1,6 @@
 'use strict';
-// Todo: Write the code for lesson 79...
+// Todo: Done
+// Links to HTML buttons
 const btnShowTestModal = document.querySelector('.show-test-modal');
 const btnShowLifeModal = document.querySelector('.show-life-modal');
 const btnShowSoulModal = document.querySelector('.show-soul-modal');
@@ -8,73 +9,67 @@ const btnShowPersonalityModal = document.querySelector(
 );
 const btnShowPathModal = document.querySelector('.show-path-modal');
 
+// Links to HTML div elements
 const overlay = document.querySelector('.overlay');
+const showTestModal = document.querySelector('.modaltest');
+const showLifeModal = document.querySelector('.modallife');
+const showSoulModal = document.querySelector('.modalsoul');
+const showPersonalityModal = document.querySelector('.modalpersonality');
+const showPathModal = document.querySelector('.modalpath');
 const btnCloseModal = document.querySelector('.close-modal');
-// const btnsShowModal = document.querySelectorAll('.show-test-modal');
 
-// console.log(btnsShowModal);
-
-const openModal = function () {
-  console.log('Any button clicked, Window open');
-  // console.log(typeof btnsShowModal);
-  modal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-};
-
-const showTestModal = function () {
+// Function expressions for buttons
+const openTestModal = function () {
   console.log('Test button clicked, Test Window open');
-  console.log(typeof btnShowTestModal);
-  modalTest.classList.remove('hidden');
+  console.log(typeof showTestModal);
+  showTestModal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
 
-const showLifeModal = function () {
+const openLifeModal = function () {
   console.log('Life button clicked, Life Window open');
   console.log(typeof btnShowLifeModal);
-  modalLife.classList.remove('hidden');
+  showLifeModal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
 
-const showSoulModal = function () {
+const openSoulModal = function () {
   console.log('Soul button clicked, Soul Window open');
   console.log(typeof btnShowSoulModal);
-  modalSoul.classList.remove('hidden');
+  showSoulModal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
 
-const showPersonalityModal = function () {
+const openPersonalityModal = function () {
   console.log('Personality button clicked, Personality Window open');
   console.log(typeof btnShowPersonalityModal);
-  modalPersonality.classList.remove('hidden');
+  showPersonalityModal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
 
-const showPathModal = function () {
+const openPathModal = function () {
   console.log('Path button clicked, Path Window open');
   console.log(typeof btnShowPathModal);
-  modalPath.classList.remove('hidden');
+  showPathModal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
 
 const closeModal = function () {
   console.log('Modal closed');
-  modal.classList.add('hidden');
-  modalTest.classList.add('hidden');
-  modalLife.classList.add('hidden');
-  modalSoul.classList.add('hidden');
-  modalPersonality.classList.add('hidden');
-  modalPath.classList.add('hidden');
+  showTestModal.classList.add('hidden');
+  showLifeModal.classList.add('hidden');
+  showSoulModal.classList.add('hidden');
+  showPersonalityModal.classList.add('hidden');
+  showPathModal.classList.add('hidden');
   overlay.classList.add('hidden');
 };
 
-// for (let i = 0; i < btnsShowModal.length; i++)
-//   btnsShowModal[i].addEventListener('click', openModal);
-
-btnShowTestModal.addEventListener('click', showTestModal);
-btnShowLifeModal.addEventListener('click', showLifeModal);
-btnShowSoulModal.addEventListener('click', showSoulModal);
-btnShowPersonalityModal.addEventListener('click', showPersonalityModal);
-btnShowPathModal.addEventListener('click', showPathModal);
+// Event listeners for the buttons
+btnShowTestModal.addEventListener('click', openTestModal);
+btnShowLifeModal.addEventListener('click', openLifeModal);
+btnShowSoulModal.addEventListener('click', openSoulModal);
+btnShowPersonalityModal.addEventListener('click', openPersonalityModal);
+btnShowPathModal.addEventListener('click', openPathModal);
 
 btnCloseModal.addEventListener('click', closeModal);
 
